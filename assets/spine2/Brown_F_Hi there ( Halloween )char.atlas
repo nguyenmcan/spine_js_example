@@ -1,0 +1,167 @@
+
+Brown_F_Hi there ( Halloween )char.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bat1
+  rotate: true
+  xy: 1162, 960
+  size: 74, 48
+  orig: 74, 48
+  offset: 0, 0
+  index: -1
+bat2
+  rotate: true
+  xy: 1986, 1866
+  size: 91, 38
+  orig: 91, 38
+  offset: 0, 0
+  index: -1
+bat3
+  rotate: true
+  xy: 1986, 1959
+  size: 84, 56
+  orig: 84, 56
+  offset: 0, 0
+  index: -1
+besom_1
+  rotate: false
+  xy: 1350, 1613
+  size: 634, 430
+  orig: 634, 430
+  offset: 0, 0
+  index: -1
+bg
+  rotate: false
+  xy: 2, 963
+  size: 864, 1080
+  orig: 864, 1080
+  offset: 0, 0
+  index: -1
+body_1
+  rotate: false
+  xy: 868, 1439
+  size: 480, 604
+  orig: 480, 604
+  offset: 0, 0
+  index: -1
+body_2
+  rotate: false
+  xy: 2, 2
+  size: 480, 604
+  orig: 480, 604
+  offset: 0, 0
+  index: -1
+hand1
+  rotate: false
+  xy: 1162, 1036
+  size: 49, 85
+  orig: 49, 85
+  offset: 0, 0
+  index: -1
+hand2
+  rotate: false
+  xy: 815, 880
+  size: 51, 81
+  orig: 51, 81
+  offset: 0, 0
+  index: -1
+hand3
+  rotate: false
+  xy: 722, 52
+  size: 62, 54
+  orig: 62, 54
+  offset: 0, 0
+  index: -1
+hand4
+  rotate: false
+  xy: 765, 875
+  size: 48, 86
+  orig: 48, 86
+  offset: 0, 0
+  index: -1
+hand5
+  rotate: false
+  xy: 868, 893
+  size: 59, 64
+  orig: 59, 64
+  offset: 0, 0
+  index: -1
+hat_1
+  rotate: false
+  xy: 868, 959
+  size: 292, 162
+  orig: 292, 162
+  offset: 0, 0
+  index: -1
+rig_bg
+  rotate: false
+  xy: 648, 336
+  size: 216, 270
+  orig: 216, 270
+  offset: 0, 0
+  index: -1
+rig_face
+  rotate: false
+  xy: 1226, 1289
+  size: 106, 148
+  orig: 106, 148
+  offset: 0, 0
+  index: -1
+rig_face1
+  rotate: false
+  xy: 1226, 1139
+  size: 106, 148
+  orig: 106, 148
+  offset: 0, 0
+  index: -1
+smoke1
+  rotate: false
+  xy: 648, 47
+  size: 72, 59
+  orig: 72, 59
+  offset: 0, 0
+  index: -1
+smoke2
+  rotate: true
+  xy: 648, 108
+  size: 226, 195
+  orig: 226, 195
+  offset: 0, 0
+  index: -1
+smoke3
+  rotate: true
+  xy: 1702, 1321
+  size: 290, 254
+  orig: 290, 254
+  offset: 0, 0
+  index: -1
+smoke4
+  rotate: false
+  xy: 1350, 1314
+  size: 350, 297
+  orig: 350, 297
+  offset: 0, 0
+  index: -1
+smoke5
+  rotate: false
+  xy: 868, 1123
+  size: 356, 314
+  orig: 356, 314
+  offset: 0, 0
+  index: -1
+text
+  rotate: true
+  xy: 484, 3
+  size: 603, 162
+  orig: 603, 162
+  offset: 0, 0
+  index: -1
+text_light
+  rotate: false
+  xy: 2, 608
+  size: 761, 353
+  orig: 761, 353
+  offset: 0, 0
+  index: -1

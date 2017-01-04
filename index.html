@@ -1,0 +1,91 @@
+<html>
+<script src="spine-widget.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+<body>
+	<center>
+		<!-- You can programmatically initialize a widget -->
+		<div id="spine-widget" style="width: 500px; height: 500px;"></div>
+	</center>
+</body>
+
+<script>
+	new spine.SpineWidget("spine-widget", {
+	json: "assets/spine1/Just do it Explosion 2 export.json",
+	atlas: "assets/spine1/Just do it Explosion 2 export.atlas",
+	
+	// json: "assets/spine2/Brown_F_Hi there ( Halloween )char.json",
+	// atlas: "assets/spine2/Brown_F_Hi there ( Halloween )char.atlas",
+	
+	animation: "animation",
+	backgroundColor: "#599",
+	fitToCanvas: false,
+	// scale: 0.56357,
+	// x: 135,
+	// y: -33,
+	success: function (widget) {
+		var animIndex = 0;
+		widget.canvas.onclick = function () {
+			animIndex++;
+			let animations = widget.skeleton.data.animations;
+			if (animIndex >= animations.length) animIndex = 0;
+			widget.setAnimation(animations[animIndex].name);				
+		}
+		
+		console.log(widget);
+		console.log(widget.skeleton);
+		console.log(widget.bounds);
+		
+		var canvas = widget.canvas;
+		var bounds = widget.bounds;
+		
+		var w = canvas.clientWidth;
+		var h = canvas.clientHeight;
+		
+		if (canvas.width != w || canvas.height != h) {
+			canvas.width = w;
+			canvas.height = h;
+		}
+
+		var centerX = bounds.offset.x + bounds.size.x / 2;
+		var centerY = bounds.offset.y + bounds.size.y / 2;
+		
+		var scaleX = canvas.width / bounds.size.x;
+		var scaleY = canvas.height / bounds.size.y;
+		var scale = Math.min(scaleX, scaleY);
+		
+		if (scale > 1) {
+			scale = 1;
+		}
+		
+		var width = canvas.width * scale;
+		var height = canvas.height * scale;
+		
+		var bone = widget.skeleton.findBone("root");
+		bone.data.scaleX = scaleX;
+		bone.data.scaleY = scaleY; 
+		bone.data.x = centerX - width / 2;
+		bone.data.y = centerY - height / 2;
+		
+		widget.skeleton.updateWorldTransform();
+					
+		console.log("canvas.width: " + w);
+		console.log("canvas.height: " + h);
+		console.log("centerX: " + centerX);
+		console.log("centerY: " + centerY);
+		console.log("scaleX: " + scaleX);
+		console.log("scaleY: " + scaleY);
+		console.log("scale: " + scale);
+		console.log("width: " + width);
+		console.log("height: " + height);
+		
+		// widget.mvp.ortho2d(0, 0, width, height);
+		// widget.gl.viewport(0, 0, canvas.width, canvas.height);
+			
+	}
+});
+
+</script>
+</body>
+
+</html>

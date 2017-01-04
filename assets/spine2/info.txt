@@ -1,0 +1,8 @@
+{
+  "mko": "face.mko",
+  "mask": "mask.png",
+  "type": "MULTI_MP",
+  "faces":[
+  {"rig_face": 0},
+  {"rig_face1": 1}]
+}
