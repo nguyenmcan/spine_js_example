@@ -1,0 +1,174 @@
+
+what.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bantay_phai
+  rotate: true
+  xy: 1732, 1906
+  size: 139, 222
+  orig: 139, 222
+  offset: 0, 0
+  index: -1
+bantay_phai2
+  rotate: true
+  xy: 1526, 1781
+  size: 76, 173
+  orig: 76, 173
+  offset: 0, 0
+  index: -1
+bantay_trai1
+  rotate: false
+  xy: 1956, 1899
+  size: 89, 146
+  orig: 89, 146
+  offset: 0, 0
+  index: -1
+bantay_traiend
+  rotate: false
+  xy: 1080, 1147
+  size: 123, 233
+  orig: 123, 233
+  offset: 0, 0
+  index: -1
+baptay_fai
+  rotate: true
+  xy: 369, 300
+  size: 118, 327
+  orig: 118, 327
+  offset: 0, 0
+  index: -1
+baptay_trai
+  rotate: false
+  xy: 789, 1148
+  size: 289, 232
+  orig: 289, 232
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 190
+  size: 365, 909
+  orig: 365, 909
+  offset: 0, 0
+  index: -1
+bongtai1
+  rotate: false
+  xy: 789, 1101
+  size: 49, 45
+  orig: 49, 45
+  offset: 0, 0
+  index: -1
+bongtai2
+  rotate: false
+  xy: 722, 1053
+  size: 49, 46
+  orig: 49, 46
+  offset: 0, 0
+  index: -1
+dot
+  rotate: false
+  xy: 568, 263
+  size: 35, 35
+  orig: 35, 35
+  offset: 0, 0
+  index: -1
+line_face
+  rotate: false
+  xy: 789, 1500
+  size: 421, 296
+  orig: 421, 296
+  offset: 0, 0
+  index: -1
+mieng_cuoi1
+  rotate: false
+  xy: 369, 191
+  size: 197, 107
+  orig: 197, 107
+  offset: 0, 0
+  index: -1
+mieng_cuoi2
+  rotate: true
+  xy: 1212, 1603
+  size: 193, 120
+  orig: 193, 120
+  offset: 0, 0
+  index: -1
+mieng_phun
+  rotate: false
+  xy: 1334, 1716
+  size: 190, 141
+  orig: 190, 141
+  offset: 0, 0
+  index: -1
+non
+  rotate: false
+  xy: 789, 1798
+  size: 541, 247
+  orig: 541, 247
+  offset: 0, 0
+  index: -1
+rig_bg
+  rotate: false
+  xy: 1212, 1506
+  size: 76, 95
+  orig: 76, 95
+  offset: 0, 0
+  index: -1
+rig_face
+  rotate: false
+  xy: 369, 665
+  size: 351, 434
+  orig: 351, 434
+  offset: 0, 0
+  index: -1
+tay_phai
+  rotate: true
+  xy: 2, 78
+  size: 110, 358
+  orig: 110, 358
+  offset: 0, 0
+  index: -1
+tay_trai_uongnuoc
+  rotate: false
+  xy: 1332, 1859
+  size: 398, 186
+  orig: 398, 186
+  offset: 0, 0
+  index: -1
+toc
+  rotate: false
+  xy: 2, 1101
+  size: 785, 944
+  orig: 785, 944
+  offset: 0, 0
+  index: -1
+toc_mai
+  rotate: false
+  xy: 369, 420
+  size: 321, 243
+  orig: 321, 243
+  offset: 0, 0
+  index: -1
+wait
+  rotate: false
+  xy: 2, 9
+  size: 164, 67
+  orig: 164, 67
+  offset: 0, 0
+  index: -1
+what
+  rotate: false
+  xy: 789, 1382
+  size: 440, 116
+  orig: 440, 116
+  offset: 0, 0
+  index: -1
+yep
+  rotate: false
+  xy: 1334, 1618
+  size: 188, 96
+  orig: 188, 96
+  offset: 0, 0
+  index: -1
