@@ -11,20 +11,19 @@
 
 <script>
 	new spine.SpineWidget("spine-widget", {
-	json: "assets/spine1/Just do it Explosion 2 export.json",
-	atlas: "assets/spine1/Just do it Explosion 2 export.atlas",
 	
-	// json: "assets/spine2/Brown_F_Hi there ( Halloween )char.json",
-	// atlas: "assets/spine2/Brown_F_Hi there ( Halloween )char.atlas",
+	// json: "assets/spine1/Just do it Explosion 2 export.json",
+	// atlas: "assets/spine1/Just do it Explosion 2 export.atlas",
+	
+	json: "assets/spine2/Brown_F_Hi there ( Halloween )char.json",
+	atlas: "assets/spine2/Brown_F_Hi there ( Halloween )char.atlas",
 	
 	animation: "animation",
-	backgroundColor: "#599",
+	backgroundColor: "#555",
 	fitToCanvas: false,
-	// scale: 0.56357,
-	// x: 135,
-	// y: -33,
 	success: function (widget) {
 		var animIndex = 0;
+		
 		widget.canvas.onclick = function () {
 			animIndex++;
 			let animations = widget.skeleton.data.animations;
@@ -34,11 +33,8 @@
 		
 		console.log(widget);
 		console.log(widget.skeleton);
-		console.log(widget.bounds);
 		
 		var canvas = widget.canvas;
-		var bounds = widget.bounds;
-		
 		var w = canvas.clientWidth;
 		var h = canvas.clientHeight;
 		
@@ -46,42 +42,67 @@
 			canvas.width = w;
 			canvas.height = h;
 		}
-
-		var centerX = bounds.offset.x + bounds.size.x / 2;
-		var centerY = bounds.offset.y + bounds.size.y / 2;
 		
-		var scaleX = canvas.width / bounds.size.x;
-		var scaleY = canvas.height / bounds.size.y;
+		var rigBGSlot;
+		
+		for(var i = 0; i < widget.skeleton.drawOrder.length; i ++) {
+			var slot = widget.skeleton.drawOrder[i];
+			if(slot.data.name == "rig_bg") {
+				rigBGSlot = slot;
+				break;
+			}
+		}
+		
+		console.log(rigBGSlot);
+		
+		var SP_VERTEX_X1 = 0, SP_VERTEX_Y1 = 1, SP_VERTEX_X2 = 2, SP_VERTEX_Y2 = 3, SP_VERTEX_X3 = 4, SP_VERTEX_Y3 = 5, SP_VERTEX_X4 = 6, SP_VERTEX_Y4 = 7;
+		
+		var rigBgAttachment = widget.skeleton.getAttachment(rigBGSlot.data.index, "rig_bg");
+		
+		console.log(rigBgAttachment);
+		
+		var width = rigBgAttachment.offset[SP_VERTEX_X4] - rigBgAttachment.offset[SP_VERTEX_X1];
+		var height = rigBgAttachment.offset[SP_VERTEX_Y2] - rigBgAttachment.offset[SP_VERTEX_Y1];
+		
+		console.log("width: " + width);
+		console.log("height: " + height);		
+		
+		// scale 
+		var scaleX = canvas.width / (width);
+		var scaleY = canvas.height / (height);
 		var scale = Math.min(scaleX, scaleY);
 		
 		if (scale > 1) {
 			scale = 1;
 		}
 		
-		var width = canvas.width * scale;
-		var height = canvas.height * scale;
+		console.log(rigBGSlot.bone);
 		
-		var bone = widget.skeleton.findBone("root");
-		bone.data.scaleX = scaleX;
-		bone.data.scaleY = scaleY; 
-		bone.data.x = centerX - width / 2;
-		bone.data.y = centerY - height / 2;
+		rigBGSlot.bone.data.scaleX = scale;
+		rigBGSlot.bone.data.scaleY = scale;
 		
-		widget.skeleton.updateWorldTransform();
-					
-		console.log("canvas.width: " + w);
-		console.log("canvas.height: " + h);
-		console.log("centerX: " + centerX);
-		console.log("centerY: " + centerY);
 		console.log("scaleX: " + scaleX);
 		console.log("scaleY: " + scaleY);
 		console.log("scale: " + scale);
-		console.log("width: " + width);
-		console.log("height: " + height);
 		
-		// widget.mvp.ortho2d(0, 0, width, height);
-		// widget.gl.viewport(0, 0, canvas.width, canvas.height);
-			
+		var stickerWidth = width * scale;
+		var stickerHeight = height  * scale;
+		
+		rigBGSlot.bone.setToSetupPose(); 
+		widget.skeleton.updateWorldTransform();
+		
+		var worldVertices = rigBgAttachment.updateWorldVertices(rigBGSlot, false);
+		console.log(worldVertices);
+		
+		var posX = worldVertices[SP_VERTEX_X1];
+		var posY = worldVertices[SP_VERTEX_Y1];
+		
+		rigBGSlot.bone.data.x = ((canvas.width - stickerWidth) / 2) - posX;
+		rigBGSlot.bone.data.y = ((canvas.height - stickerHeight) / 2) - posY;
+		
+		rigBGSlot.bone.setToSetupPose(); 
+		widget.skeleton.updateWorldTransform();
+		
 	}
 });
 
