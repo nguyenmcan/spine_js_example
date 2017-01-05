@@ -1,0 +1,125 @@
+
+mystique.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 2, 205
+  size: 258, 268
+  orig: 258, 268
+  offset: 0, 0
+  index: -1
+20
+  rotate: false
+  xy: 2, 748
+  size: 258, 271
+  orig: 258, 271
+  offset: 0, 0
+  index: -1
+anhsang
+  rotate: false
+  xy: 2, 475
+  size: 258, 271
+  orig: 258, 271
+  offset: 0, 0
+  index: -1
+bk1
+  rotate: true
+  xy: 247, 124
+  size: 79, 11
+  orig: 79, 11
+  offset: 0, 0
+  index: -1
+bk2
+  rotate: false
+  xy: 262, 332
+  size: 79, 11
+  orig: 79, 11
+  offset: 0, 0
+  index: -1
+bk3
+  rotate: false
+  xy: 522, 589
+  size: 79, 11
+  orig: 79, 11
+  offset: 0, 0
+  index: -1
+bk4
+  rotate: true
+  xy: 664, 704
+  size: 78, 11
+  orig: 78, 11
+  offset: 0, 0
+  index: -1
+full
+  rotate: false
+  xy: 262, 748
+  size: 258, 271
+  orig: 258, 271
+  offset: 0, 0
+  index: -1
+rig_bg
+  rotate: false
+  xy: 262, 289
+  size: 32, 41
+  orig: 32, 41
+  offset: 0, 0
+  index: -1
+rig_face
+  rotate: false
+  xy: 522, 602
+  size: 140, 180
+  orig: 140, 180
+  offset: 0, 0
+  index: -1
+tai1
+  rotate: false
+  xy: 734, 851
+  size: 27, 59
+  orig: 27, 59
+  offset: 0, 0
+  index: -1
+tai2
+  rotate: false
+  xy: 936, 963
+  size: 26, 56
+  orig: 26, 56
+  offset: 0, 0
+  index: -1
+tocdai
+  rotate: false
+  xy: 262, 345
+  size: 257, 131
+  orig: 257, 131
+  offset: 0, 0
+  index: -1
+tocden
+  rotate: false
+  xy: 262, 478
+  size: 258, 268
+  orig: 258, 268
+  offset: 0, 0
+  index: -1
+tocngan
+  rotate: false
+  xy: 734, 912
+  size: 200, 107
+  orig: 200, 107
+  offset: 0, 0
+  index: -1
+tranform1
+  rotate: false
+  xy: 522, 784
+  size: 210, 235
+  orig: 210, 235
+  offset: 0, 0
+  index: -1
+tranform2
+  rotate: true
+  xy: 2, 2
+  size: 201, 243
+  orig: 201, 243
+  offset: 0, 0
+  index: -1

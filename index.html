@@ -15,11 +15,11 @@
 	// json: "assets/spine1/Just do it Explosion 2 export.json",
 	// atlas: "assets/spine1/Just do it Explosion 2 export.atlas",
 	
-	// json: "assets/spine2/Brown_F_Hi there ( Halloween )char.json",
-	// atlas: "assets/spine2/Brown_F_Hi there ( Halloween )char.atlas",
+	json: "assets/spine2/Brown_F_Hi there ( Halloween )char.json",
+	atlas: "assets/spine2/Brown_F_Hi there ( Halloween )char.atlas",
 	
-	json: "assets/spine3/what.json",
-	atlas: "assets/spine3/what.atlas",
+	// json: "assets/spine3/what.json",
+	// atlas: "assets/spine3/what.atlas",
 	
 	animation: "animation",
 	backgroundColor: "#555",
@@ -45,6 +45,20 @@
 			canvas.width = w;
 			canvas.height = h;
 		}
+		
+		// update face
+		
+		var faceSlot = widget.skeleton.findSlot("face");
+		var faceAttach = widget.skeleton.getAttachment(faceSlot.data.index, "rig_face");
+		var faceAttach1 = widget.skeleton.getAttachment(faceSlot.data.index, "rig_face1");
+		
+		console.log(faceSlot);
+		console.log(faceAttach);
+		console.log(faceAttach1);
+		
+		// faceSlot.setAttachment();
+		
+		// update postion + scale
 		
 		var rigBGSlot;
 		

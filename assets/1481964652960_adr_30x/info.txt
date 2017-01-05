@@ -1,0 +1,1 @@
+{"mko": "face.mko", "mask": "mask.png", "thumb2_data": {"y": 134, "h": 694, "w": 543, "x": 207}, "type": "SINGLE_MP", "stix": "spine"}
